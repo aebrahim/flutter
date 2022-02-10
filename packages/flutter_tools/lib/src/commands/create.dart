@@ -296,6 +296,7 @@ class CreateCommand extends CreateBase {
       agpVersion: gradle.templateAndroidGradlePluginVersion,
       kotlinVersion: gradle.templateKotlinGradlePluginVersion,
       gradleVersion: gradle.templateDefaultGradleVersion,
+      minIosVersion: '9.0',
     );
 
     final String relativeDirPath = globals.fs.path.relative(projectDirPath);

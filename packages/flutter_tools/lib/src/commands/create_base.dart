@@ -340,6 +340,7 @@ abstract class CreateBase extends FlutterCommand {
     String agpVersion,
     String kotlinVersion,
     String gradleVersion,
+    String minIosVersion,
     bool withPlatformChannelPluginHook = false,
     bool withFfiPluginHook = false,
     bool ios = false,
@@ -415,6 +416,7 @@ abstract class CreateBase extends FlutterCommand {
       'agpVersion': agpVersion,
       'kotlinVersion': kotlinVersion,
       'gradleVersion': gradleVersion,
+      'minIosVersion': minIosVersion,
     };
   }
 
@@ -737,9 +739,7 @@ const Set<String> _packageDependencies = <String>{
 @visibleForTesting
 bool isValidPackageName(String name) {
   final Match match = _identifierRegExp.matchAsPrefix(name);
-  return match != null &&
-      match.end == name.length &&
-      !_keywords.contains(name);
+  return match != null && match.end == name.length && !_keywords.contains(name);
 }
 
 // Return null if the project name is legal. Return a validation message if

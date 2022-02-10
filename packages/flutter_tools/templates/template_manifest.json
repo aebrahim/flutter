@@ -49,7 +49,7 @@
         "templates/app_shared/ios-swift.tmpl/Runner/AppDelegate.swift",
         "templates/app_shared/ios-swift.tmpl/Runner/Runner-Bridging-Header.h",
         "templates/app_shared/ios.tmpl/.gitignore",
-        "templates/app_shared/ios.tmpl/Flutter/AppFrameworkInfo.plist",
+        "templates/app_shared/ios.tmpl/Flutter/AppFrameworkInfo.plist.tmpl",
         "templates/app_shared/ios.tmpl/Flutter/Debug.xcconfig",
         "templates/app_shared/ios.tmpl/Flutter/Release.xcconfig",
         "templates/app_shared/ios.tmpl/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
